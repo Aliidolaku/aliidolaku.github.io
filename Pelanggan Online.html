@@ -77,7 +77,7 @@
 						<li><a href="Layanan Antar.html">Layanan Antar</a></li>
 						<li><a href="Tentang.html">Tentang</a></li>
 						<li><a href="Pelanggan Online.html">Pelanggan Online</a></li>
-						<li><a href="kontak.html">Kontak</a></li>
+						<li><a href="Kontak.html">Kontak</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -158,7 +158,7 @@
 				<table width ="70%" align ="center" border="1">
 					<caption>Contoh Tagihan</caption>
 					<tr>
-						<th> Makanan/Minuman</th>
+						<th>Makanan/Minuman</th>
 						<th>Kuantitas</th>
 						<th>Harga Satuan</th>
 						<th>Harga</th>
@@ -196,27 +196,26 @@
 					</tr>
 				</table>
 				<br>
-				<caption>Menjadi Pelanggan</caption>
-				<form method="post" action="registrasi.php">
-					Username: <br>
-					<input type="text" name="username">
-					<br>
-					Pasword: <br>
-					<input type="password" name="Password">
-					<br>
-					<input type="submit" value="login">
+					<fieldset>
+					<legend>Masuk Sebagai Pelanggan</legend>
+					<form method="post" action="registrasi.php">
+						Username: <br>
+						<input type="text" name="username">
+						<br>
+						Pasword: <br>
+						<input type="password" name="Password">
+						<br>
+						<input type="submit" value="login">
+					</fieldset>
 					
 					<fieldset>
-						<legend>A. IDENTITAS PELANGGAN</legend>
+					
+						<legend>Menjadi Pelanggan</legend>
 						
 						<label>Nama</label>
 						<input type="text" name="nama" size="38"
 						<br>
-						<label>Tempat/Tgl. Lahir</label>
-						<input type="text name="tmp_lahir" size="15">
-						<input type="text name="tgl_lahir" size="8">
-						<br>
-						
+											
 						<label>Area</label>
 						<select name="area">
 							<option value="wonosari">Wonosari</option>
@@ -228,17 +227,29 @@
 							<option value="lainnya">Lainnya</option>
 						</select>
 						<br>
+						
 						<label>No Telepon</label>
-						<imput type="text" name="no_telepon">
+						<imput type="text name="no_telepon">
+						<br>
+						<textarea name="no_telepon" cols="40" rows="1"></textarea>
 						<br>
 						
 						<label>Email</label>
-						<imput type="text" name="email">
+						<br>
+						<imput type="text name="email">
+						<textarea name="email" cols="40" rows="1"></textarea>
+						<br>						
+						<label>Alamat Rumah</label>
+						<br>
+						<textarea name="alamat_rumah" cols="40" rows="5"></textarea>
+						<br>
+						Gender
+						<br>
+						<input type="radio" name="gender">Laki-laki
+						<input type="radio" name="gender">Perempuan
 						<br>
 						
-						<label>Alamat Rumah</label>
-						<textarea name="alamat_rumah" cols="40" rows="2"></textarea>
-						<br>
+						<input type="submit" value="Daftar">
 					</fieldset>
 				</section>
 			
